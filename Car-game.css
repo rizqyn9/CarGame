@@ -1,0 +1,156 @@
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+}
+
+html, body{
+  background: linear-gradient(darkblue, cyan);
+  font-family: 'Play', arial, serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+em {
+  margin: 0 6px;
+  color: #ff0000
+}
+
+.startscreen {
+  background: #eee url(images/start.png);
+}
+
+/* ANCHOR */
+/* !Change This */
+.gamebg-level0 {
+  background: #eee url(images/bg1.png);
+}
+
+.gamebg-level1 {
+  background: #eee url(images/bg2.png);
+}
+
+.gamebg-level2 {
+  background: #eee url(images/bg3.png);
+}
+
+.gamebg-level3 {
+  background: #eee url(images/bg4.png);
+}
+
+.gamebg-level4 {
+  background: #eee url(images/bg5.png);
+}
+
+.gamebg-level5 {
+  background: #eee url(images/bg6.png);
+}
+
+.gamebg-won {
+  background: #eee url(images/win.png);
+}
+
+#game {
+  width: 1300px;
+}
+
+#asset {
+  position: absolute;
+  top: -99999px;
+}
+
+#free-space{
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+#nama{
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 900;
+
+}
+
+#nim{
+  font-size: 1.5rem;
+}
+
+#game-container {
+  position: relative;
+  width: 1300px;
+  margin: auto;
+  border: .8rem solid black;
+  box-shadow: 0px 0px 2rem white;
+}
+
+#level {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-weight: 900;
+}
+
+.progressbar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 300px;
+  height:20px;
+  margin: 2px;
+  border: 1px solid #000;
+  box-shadow: 0 0 12px cyan;
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8C906F), color-stop(48%,#8C906F), color-stop(51%,#323721), color-stop(54%,#55624F), color-stop(100%,#55624F)); /* webkit */
+  background: gradient(linear, left top, left bottom, color-stop(0%,#8C906F), color-stop(48%,#8C906F), color-stop(51%,#323721), color-stop(54%,#55624F), color-stop(100%,#55624F));
+}
+
+.progressbar .fuel-value {
+  height:20px;
+  background: linear-gradient(cyan , blue); /* webkit */
+  background: gradient(linear, left top, left bottom, color-stop(0%,#ff6600), color-stop(48%,#ff6600), color-stop(51%,#eb5c00), color-stop(54%,#e05700), color-stop(100%,#d65200));
+}
+
+
+.touch-control {
+  position: absolute;
+}
+#left-button {
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+#right-button {
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+#restart-button {
+  top: 0;
+  left: 50%;
+  left: calc( 50% - 50px );
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+#instruction {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-left: 400px;
+  color: white;
+  text-shadow: 0 0 1rem black;
+  font-weight: 900;
+}
+
+
+
+
+

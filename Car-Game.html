@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<!--
+
+	 Box2D Car Game
+	 http://42games.net/html5games/box2d-car-game/
+
+	 This is an example game for the book HTML5 Games Development: A Beginning Guide.
+
+	 Copyright 2011, Thomas Seng Hin Mak
+	 makzan@42games.net
+
+	 All Right Reserved.
+
+	-->
+
+	<meta charset=utf-8>
+	<title>Box2D Car Game Rizqy</title>
+	<link href='http://fonts.googleapis.com/css?family=Play&v1' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="Car-Game.css">
+	<meta name="viewport" content="width=device-width, initial-scale=0.78, minimum-scale=0.78, maximum-scale=0.78">
+</head>
+<body>
+	<div id="free-space">
+		<div id="nama">Rizqy Prastya Ari Nugroho</div>
+		<div id="nim">01817147194</div>
+	</div>
+	<section id="game-container">
+
+		<canvas id="game" width='1300' height='600' class="startscreen"></canvas>
+
+		<div id="fuel" class="progressbar">
+			<div class="fuel-value" style="width: 100%;"></div>
+		</div>
+
+
+		<div id="level">
+		</div>
+
+		<div id="left-button" class="touch-control"></div>
+		<div id="right-button" class="touch-control"></div>
+		<!-- <div id="restart-button" class="touch-control">Restart</div> -->
+
+		<div id="instruction"><p>Press <em>→</em> to move right. <em>←</em> to move left. <em>R</em> to restart the game.</p></div>
+	</section>
+
+
+
+	<div id="asset">
+		<img id="flag" src='images/flag.png'>
+		<img id="bus" src="images/bus.png">
+		<img id="wheel" src="images/wheel.png">
+	</div>
+
+	<script src='js/box.js'></script>
+	<script src='js/jquery-1.11.2.min.js'></script>
+	<script src='js/carGame.js'></script>
+</body>
+</html>
